@@ -19,9 +19,9 @@ EOF
 header_info
 echo -e "Loading..."
 APP="CasaOS"
-var_disk="8"
-var_cpu="2"
-var_ram="2048"
+var_disk="1024"
+var_cpu="4"
+var_ram="4096"
 var_os="debian"
 var_version="12"
 variables
@@ -31,7 +31,7 @@ catch_errors
 function default_settings() {
   CT_TYPE="1"
   PW=""
-  CT_ID=$NEXTID
+  CT_ID=200
   HN=$NSAPP
   DISK_SIZE="$var_disk"
   CORE_COUNT="$var_cpu"

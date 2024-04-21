@@ -19,7 +19,7 @@ EOF
 header_info
 echo -e "Loading..."
 APP="Docker"
-var_disk="4"
+var_disk="64"
 var_cpu="2"
 var_ram="2048"
 var_os="debian"
@@ -31,7 +31,7 @@ catch_errors
 function default_settings() {
   CT_TYPE="1"
   PW=""
-  CT_ID=$NEXTID
+  CT_ID=150
   HN=$NSAPP
   DISK_SIZE="$var_disk"
   CORE_COUNT="$var_cpu"
